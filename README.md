@@ -38,8 +38,8 @@ uvicorn main:app --reload
 ```
 
 ### Play!
-FastAPI comes with swagger for free: http://localhost:5566/tasks
-Try add the following payload to http://127.0.0.1:8000/docs#/default/product_task_tasks__post:
+FastAPI comes with swagger for free, try add the following payload to http://127.0.0.1:8000/docs#/default/product_task_tasks__post:
+![Swagger](images/Swagger.png?raw=true "Swagger example")
 ```
 {
     "post_url": "https://dummyjson.com/products/1",
