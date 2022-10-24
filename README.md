@@ -50,5 +50,6 @@ Try add the following payload to http://127.0.0.1:8000/docs#/default/product_tas
 }
 ```
 Then cehck from Flower UI: http://localhost:5566/tasks
+![Flower Demo](images/Flower.png?raw=true "Flower UI example")
 
 Note: For testing purpose https://dummyjson.com/products/1 just a free/fake web api.
