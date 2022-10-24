@@ -1,5 +1,6 @@
 __pycache__
 virtualenv
+.DS_Store
 
 # default use autopep8 as linter and formatter
 # uncomment if want to using something else
