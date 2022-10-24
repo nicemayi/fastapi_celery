@@ -26,9 +26,9 @@ def greeting():
 @app.post('/tasks/')
 async def product_task(task: Task):
     # For demo purpose
-    # repeat the job 10 times
-    # Note: In production meaning this will trigger 10
-    # requests immediately after delay seconds
+    # repeat the job 100 times
+    # Note: In production meaning this will trigger 100
+    # concurrent requests immediately after delay seconds
     from random import randint
     from time import sleep
     for _ in range(100):
