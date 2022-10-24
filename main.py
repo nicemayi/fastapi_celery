@@ -29,7 +29,11 @@ async def product_task(task: Task):
     # repeat the job 10 times
     # Note: In production meaning this will trigger 10
     # requests immediately after delay seconds
-    for _ in range(1):
+    from random import randint
+    from time import sleep
+    for _ in range(100):
+        # don't flood this free api
+        sleep(randint(5, 10))
         task_update_product.apply_async(
             (task.post_url, task.payload,),
             countdown=task.delay,
