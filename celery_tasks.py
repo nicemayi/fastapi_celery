@@ -4,6 +4,7 @@ from products.tasks import update_product_from_api
 # Use Redis as both broker and backend storage
 app = Celery('celery_tasks', backend='redis://localhost',
              broker='redis://localhost')
+app.conf.timezone = 'US/Pacific'
 
 
 @app.task
